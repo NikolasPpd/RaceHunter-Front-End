@@ -1,10 +1,9 @@
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
 }
-
-
 
 body{
     font-family:sans-serif, serif;
@@ -41,8 +40,58 @@ ul{
     margin-top: 60px;
 }
 
-.nav{
+.Extra{
+    text-align: right;
+    position: absolute;
+    margin-left: 1230px;
+    top: 22px;
+}
+
+.Home{
+    border: none;
+    outline: none;
+    background-color: khaki;
+    color: gray;
+  }
+  
+  .LogIn{
+      border-radius: 15px;
+      background-color: blue;
+      outline: none;
+      border: none;
+      padding: 8px;
+      width: 90px;
+      color: white;
+  }
+
+  .Extra > span + span{
+    padding: 10px
+}
+
+.Anazitisi{
+    text-align: center;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -50px;
+}
+
+.texting{
+    border-radius: 20px;
+    font-size: 20px;
+    height: 40px;
+    width: 400px;
+    padding: 10px;
+}
+
+.image{
+   margin-left: -70px;
+   margin-top: 10px;
+}
+
+header{
+    background-color:khaki;
     width: 100%;
-    height: 10vh;
-    background-color: blue;
+    height: 80px;
+    padding: 0px 100px;
+    position: fixed;
 }

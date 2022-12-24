@@ -3,7 +3,7 @@ import {SlCalender} from "react-icons/sl"
 import {ImLocation} from "react-icons/im"
 import "./marathons.css"
 
-function Marathons(props) {
+export default  function Marathons(props) {
   return (
         <div className='marathon-tag'>
         <img src={props.url}  alt='run'></img>
@@ -19,4 +19,3 @@ function Marathons(props) {
   )
 }
 
-export default Marathons
