@@ -5,6 +5,7 @@ import img from './images/RaceHunter_Gradient_Logo.png';
 export default function Navbar(){
      
     const[query,setQuery] = useState("");
+    console.log(query)
     return (
       <div>
          <header>

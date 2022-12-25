@@ -1,14 +1,13 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Api from './Api'
+import * as ReactDOM from 'react-dom';
+import Mars from './Mars'
 
 
 export default function App() {
 
   return (
       <div>
-        <Navbar/>
-        <Api/>
+          <Mars/>
       </div>
   )
   
