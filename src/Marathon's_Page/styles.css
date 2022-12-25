@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+
+:root{
+    --Normal-headers-size: 30px;
+    --Normal-subHeaders-size: 25px;
+    --Normal-smallerHeaders-size: 20px;
+    
+    --primary-color: #2563EB;
+
+    --text-color-gray: rgb(169, 169, 169);
+    --text-color-black: black;
+    --Normal-text-size: 15px;
+}
+
 body{
     font-family:sans-serif, serif;
 }

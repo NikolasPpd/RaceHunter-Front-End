@@ -13,7 +13,7 @@
 }
 
 .left-side-ul > li{
-    color: rgb(169, 169, 169);
+    color: var(--text-color-gray);
     margin-bottom: 10px;
     width: fit-content;
     transition: 400ms;
@@ -22,11 +22,11 @@
 .left-side-ul > li:hover{
     text-decoration: underline;
     cursor: pointer;
-    color: rgb(51, 0, 255);
+    color: var(--primary-color);
 }
 
 .left-side > .copyright{
-    color: rgb(0, 0, 0);
+    color: var(--text-color-black);
 }
 
 /* left side------------------------------------------------- */

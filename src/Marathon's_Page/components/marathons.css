@@ -25,7 +25,7 @@ img{
     margin-left: 7px;
     gap: 9px;
     padding: 20px 10px;
-    font-size: 14px;
+    font-size: var(--Normal-text-size)
 }
 
 .marathon-dist{
@@ -43,21 +43,21 @@ img{
 }
 
 p{
-    color: grey;
+    color: var(--text-color-gray);
 }
 
 h2{
-    font-size: 20px;
+    font-size: var(--Normal-smallerHeaders-size);
 }
 
 .icons{
-    color: black;
-    font-size: 20px;
+    color: var(--text-color-black);
+    font-size: var(--Normal-smallerHeaders-size);
 }
 
 .price{
     font-size: 25px;
-    color: blue;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
