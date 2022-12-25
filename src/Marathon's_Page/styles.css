@@ -58,12 +58,12 @@ ul{
     border: none;
     outline: none;
     background-color: khaki;
-    color: gray;
+    color: var(--text-color-gray);
   }
   
   .LogIn{
       border-radius: 15px;
-      background-color: blue;
+      background-color: var(--primary-color);
       outline: none;
       border: none;
       padding: 8px;
@@ -84,7 +84,7 @@ ul{
 
 .texting{
     border-radius: 20px;
-    font-size: 20px;
+    font-size: var(--Normal-smallerHeaders-size);
     height: 40px;
     width: 400px;
     padding: 10px;
