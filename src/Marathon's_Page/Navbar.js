@@ -10,7 +10,9 @@ export default function Navbar(){
     return (
       <div>
          <header>
-            <Link to="/"> <img  className = 'image' src = {img}/></Link>
+            
+         <Link className='linkimage' to="/"> <img  className = 'image' src = {img}/></Link> 
+            {/* <img  className = 'image' src = {img}/>  */}
             <div className='Anazitisi'>
                 <input 
                     className = "texting" 
