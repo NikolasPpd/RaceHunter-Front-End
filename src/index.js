@@ -7,6 +7,7 @@ import ErrorPage from "./Marathon's_Page/error-page";
 import ReactDOM from "react-dom/client";
 import App from "./Marathon's_Page/App";
 import Contact from "./Contact"; 
+import Mars from "./Marathon's_Page/Mars";
 
 //creating BrowserRouter
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     {// να σημειωθεί ότι μια σελίδα για να προστεθεί σε Link πρέπρει πρώτα να προστεθεί εδώ το path της 
       path: "/contact", 
       element: <Contact /> 
+    },
+    {// να σημειωθεί ότι μια σελίδα για να προστεθεί σε Link πρέπρει πρώτα να προστεθεί εδώ το path της 
+      path: "/src/Marathon's_Page/Mars", 
+      element: <Mars /> 
     }
   ]);
 

@@ -10,7 +10,6 @@ export default function Navbar(){
     return (
       <div>
          <header>
-            //Όταν υπάρξουν σελίδες σαν Login ή εγγραφή προσθέστε τότε το <Link></Link>
             <Link to="/"> <img  className = 'image' src = {img}/></Link>
             <div className='Anazitisi'>
                 <input 
