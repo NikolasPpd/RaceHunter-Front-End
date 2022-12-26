@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import  {Link} from "react-router-dom";
 import './styles.css'
 import img from './images/RaceHunter_Gradient_Logo.png';
 
@@ -9,7 +10,8 @@ export default function Navbar(){
     return (
       <div>
          <header>
-         <img  className = 'image' src = {img}/>
+            //Όταν υπάρξουν σελίδες σαν Login ή εγγραφή προσθέστε τότε το <Link></Link>
+            <Link to="/"> <img  className = 'image' src = {img}/></Link>
             <div className='Anazitisi'>
                 <input 
                     className = "texting" 

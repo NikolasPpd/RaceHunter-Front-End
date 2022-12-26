@@ -1,4 +1,5 @@
 import React from 'react'
+import  {Link} from "react-router-dom";
 import "./footer.css"
 
 function Footer() {
@@ -7,8 +8,8 @@ function Footer() {
         <div className="left-side">
             <h2>RaceHunter</h2>
             <ul className='left-side-ul'>
-                <li>Σχετικά με εμάς</li>
-                <li>Επικοινωνία</li>
+                <li>Σχετικά με εμάς</li>//οταν υπάρξουν αλλες σελίδες ας χρησιμοποιηθεί το link με τον ιδιο τροπο που έγινε και κάτων
+                <Link to="./Contact"><li>Επικοινωνία</li></Link>//θα χρειαστεί κανόνας css  gia Link καθώς αυτό έχει χρώμα όταν έχει χρησιμοποιηθεί
                 <li>Όροι χρήσης</li>
                 <li>Πολιτική Απορρήτου</li>
             </ul>
