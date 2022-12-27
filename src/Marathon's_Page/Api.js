@@ -13,7 +13,7 @@ export default function Api(){
         axios.get("https://api.imgflip.com/get_memes")
         .then(res => setMarathons(res.data.data.memes))
         .catch(err => console.error(err))
-}, [marathons])
+}, [])
       
       
     
