@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-
+import "./filters.css";
+import {MdOutlineGpsFixed} from "react-icons/md"
+import {RiPlayList2Fill} from "react-icons/ri"
 
 export default function Filters(){
 
@@ -22,10 +24,11 @@ export default function Filters(){
 
     return (
    <div>    
-    <form>
-           <br/> 
+    <form className='filtersForm'>
            <p>Φίλτρα Αναζήτησης</p>  
-           <br/>  
+           <div className='filterElements'>
+            <div className='nearMe'>
+            <MdOutlineGpsFixed/>
            <label>Αγώνες Κοντά μου</label>   
            <input
              type = "checkbox"
@@ -34,7 +37,9 @@ export default function Filters(){
              onChange={Handle}
              name = "nearS"
            />
-           <br/>
+           </div>
+           <div className='list'>
+           <RiPlayList2Fill/>
        <select 
            type=""
            id="sort"
@@ -45,8 +50,9 @@ export default function Filters(){
          <option value="ascending">Αύξουσα</option>
          <option value="descending">Φθίνουσα</option>
        </select> 
+       </div>
+       </div>
      </form>
-     <br/> 
     </div> 
     )
 }

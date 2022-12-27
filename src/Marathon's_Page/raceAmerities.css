@@ -1,0 +1,22 @@
+.raceAmerForm{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.raceAmerForm > p{
+    color: black;
+    margin-bottom: 15px;
+}
+
+.raceAmerForm{
+    color: var(--text-color-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.raceAmerForm > ul > li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

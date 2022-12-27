@@ -1,9 +1,8 @@
 .marathon-tag{
     display: flex;
-    margin-top: 40px;
-    margin-left: 500px;
+    margin-bottom: 40px;
     background-color: rgb(240, 239, 239);
-    width: 50%;
+    width: 70%;
     border-radius: 15px;
     position: relative;
     height: fit-content;

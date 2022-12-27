@@ -1,0 +1,19 @@
+.marathonsTypeForm > p{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.marTypeElements > ul{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--text-color-gray);
+}
+
+.marTypeElements > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './marathonsType.css'
 
 
 export default function MarathonType(){
@@ -35,11 +36,12 @@ export default function MarathonType(){
 
 return (
  <div>
-    <form>
-        <br/> 
+    <form className='marathonsTypeForm'>
         <p>Μήκος Διαδρομής</p>
-        <br/> 
-          <input
+        <div className='marTypeElements'>
+          <ul>
+            <li>
+              <input
             type = "checkbox"
             id="Onekm"
             checked = {TypeMarData.Onekm}
@@ -47,7 +49,8 @@ return (
             name = "Onekm"
           />
           <label>1Km ({one})</label>
-          <br/>  
+          </li>
+          <li>
           <input
             type = "checkbox"
             id="Twokm"
@@ -55,8 +58,9 @@ return (
             onChange={Handling}
             name = "Twokm"
           />
-          <label>2Km ({two})</label> 
-           <br/>  
+          <label>2Km ({two})</label>
+          </li>
+          <li>
           <input
             type = "checkbox"
             id="Tenkm"
@@ -65,7 +69,8 @@ return (
             name = "Tenkm"
           />
           <label>10Km ({ten})</label> 
-           <br/>  
+          </li>
+          <li>
           <input
             type = "checkbox"
             id="semMar"
@@ -73,8 +78,9 @@ return (
             onChange={Handling}
             name = "semMar"
           />
-          <label>Ημιμαραθώνιος ({sem})</label> 
-           <br/> 
+          <label>Ημιμαραθώνιος ({sem})</label>
+          </li>
+          <li>
           <input
             type = "checkbox"
             id="Marathon"
@@ -82,10 +88,13 @@ return (
             onChange={Handling}
             name = "Marathon"
           />
-          <label>Μαραθώνιος ({Mar})</label>  
+          <label>Μαραθώνιος ({Mar})</label>
+          </li>
+          </ul>    
+          </div>
     </form>
       
-    <br/> 
+    
 </div>
 )
 

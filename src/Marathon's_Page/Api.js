@@ -33,7 +33,7 @@ export default function Api(){
                   {allmars}
           </div>
       </div>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
     

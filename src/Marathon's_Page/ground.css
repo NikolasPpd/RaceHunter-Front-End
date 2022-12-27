@@ -1,0 +1,22 @@
+.groundForm{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.groundForm > p{
+    color: black;
+    margin-bottom: 15px;
+}
+
+.groundForm > ul {
+    color: var(--text-color-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.groundForm > ul > li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

@@ -19,6 +19,7 @@ export default function Navbar(){
                     type = "text" 
                     placeholder='Αναζήτηση αγώνα ή τοποθεσίας'
                     onChange={(e => setQuery(e.target.value))}/>
+                    <button className='search-button'>Αναζήτηση</button>
                 
             </div>
             <div className='Extra'>

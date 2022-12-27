@@ -1,0 +1,29 @@
+.filtersForm > p{
+    color: black;
+    margin-top: 30px;
+}
+
+.filterElements, .filterElements > .list > select{
+    color: var(--text-color-gray);
+}
+
+.filterElements{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.nearMe{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

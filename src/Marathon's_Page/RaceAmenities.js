@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import "./raceAmerities.css"
 
 export default function RaceAmenities(){
 
@@ -29,11 +30,12 @@ function HandlingAmenities(event){
 
     return (
 
-        <div>
-            <br/> 
+      // Γιατί δεν υπάρχει form?
+        <div className='raceAmerForm'>
             <p>Παροχές Αγώνα</p>
-            <br/> 
-            <input
+            <ul>
+              <li>
+              <input
             type = "checkbox"
             id="Troph"
             checked = {RaceAmenities.troph}
@@ -41,35 +43,39 @@ function HandlingAmenities(event){
             name = "troph"
           />
           <label>Τροφοδοσία({troph})</label>
-          <br/>  
-          <input
+              </li>
+              <li>
+              <input
             type = "checkbox"
             id="Medals"
             checked = {RaceAmenities.medals}
             onChange={HandlingAmenities}
             name = "medals"
           />
-          <label>Μετάλλια ({medals})</label> 
-           <br/>  
-          <input
+          <label>Μετάλλια ({medals})</label>
+              </li>
+              <li>
+              <input
             type = "checkbox"
             id="Shirt"
             checked = {RaceAmenities.shirt}
             onChange={HandlingAmenities}
             name = "shirt"
           />
-          <label>Μπλούζα ({shirt})</label> 
-           <br/>  
-          <input
+          <label>Μπλούζα ({shirt})</label>
+              </li>
+              <li>
+              <input
             type = "checkbox"
             id="Results"
             checked = {RaceAmenities.results}
             onChange={HandlingAmenities}
             name = "results"
           />
-          <label>Αποτελέσματα ({results})</label> 
-           <br/> 
-          <input
+          <label>Αποτελέσματα ({results})</label>
+              </li>
+              <li>
+              <input
             type = "checkbox"
             id="Onlinepay"
             checked = {RaceAmenities.onlinepay}
@@ -77,6 +83,8 @@ function HandlingAmenities(event){
             name = "onlinepay"
           />
           <label>Online-Pay ({onlinepay})</label>
+              </li>
+            </ul>  
         </div>
     )
 }

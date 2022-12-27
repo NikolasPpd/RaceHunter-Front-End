@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./ground.css";
 
 
 export default function Distance(){
@@ -30,11 +31,12 @@ function HandlingGround(event){
 
     return (
 
-        <div>
-            <br/> 
+      // Γιατί δεν υπάρχει form?
+        <div className='groundForm'>
             <p>Έδαφος Διαδρομής</p>
-            <br/> 
-            <input
+            <ul>
+              <li>
+              <input
             type = "checkbox"
             id="Asphalt"
             checked = {GroundTypeData.asphalt}
@@ -42,26 +44,29 @@ function HandlingGround(event){
             name = "asphalt"
           />
           <label>Άσφαλτος ({asphalt})</label>
-          <br/> 
-          <input
+              </li>
+              <li>
+              <input
             type = "checkbox"
             id="Mountain"
             checked = {GroundTypeData.mountain}
             onChange={HandlingGround}
             name = "mountain"
           />
-          <label>Βουνό ({mountain})</label> 
-           <br/>  
-          <input
+          <label>Βουνό ({mountain})</label>
+              </li>
+              <li>
+              <input
             type = "checkbox"
             id="Grass"
             checked = {GroundTypeData.grass}
             onChange={HandlingGround}
             name = "grass"
           />
-          <label>Γρασίδι ({grass})</label> 
-           <br/>  
-          <input
+          <label>Γρασίδι ({grass})</label>
+              </li>
+              <li>
+              <input
             type = "checkbox"
             id="Sand"
             checked = {GroundTypeData.sand}
@@ -69,8 +74,9 @@ function HandlingGround(event){
             name = "sand"
           />
           <label>Άμμος ({sand})</label> 
-           <br/> 
-          <input
+              </li>
+              <li>
+              <input
             type = "checkbox"
             id="Multiterrain"
             checked = {GroundTypeData.multiter}
@@ -78,6 +84,8 @@ function HandlingGround(event){
             name = "multiter"
           />
           <label>Multi-terrain ({multiter})</label>
+              </li>
+            </ul>   
         </div>
         
     )
