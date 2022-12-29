@@ -7,17 +7,20 @@
 
 
 :root{
+    --Normal-big-headers-size: 45px;
     --Normal-headers-size: 30px;
     --Normal-subHeaders-size: 25px;
     --Normal-smallerHeaders-size: 20px;
     
     --primary-color: #2563EB;
 
-    --text-color-gray: rgb(169, 169, 169);
+    --text-color-gray: #6B7280;
     --text-color-black: black;
+    --Normal-big-text-size: 18px;
     --Normal-text-size: 15px;
     --Normal-mid-text-size: 17px
 }
+
 
 body{
     font-family:sans-serif, serif;
@@ -45,12 +48,16 @@ ul{
 }
 
 
-.marathonsPageCont{
+.marathons-page-cont{
     margin-top: 60px;
 }
 
 hr{
-    border: 1px solid var(--text-color-gray);
+    border: 1px solid rgba(107, 114, 128, 0.5);
+}
+
+a, Link{
+    text-decoration: none;
 }
 
 select{
@@ -59,13 +66,12 @@ select{
 }
 
 .filts{
+    margin-top: 30px;
     padding-left: 40px;
-    width: 40%;
+    width: 300px;
 }
-
-
-
 
 .marathons-cont{
     display: flex;
+    gap: 100px;
 }

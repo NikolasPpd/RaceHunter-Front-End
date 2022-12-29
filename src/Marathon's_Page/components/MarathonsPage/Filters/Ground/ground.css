@@ -6,17 +6,19 @@
 .groundForm > p{
     color: black;
     margin-bottom: 15px;
+    font-size: var(--Normal-subHeaders-size);
 }
 
 .groundForm > ul {
     color: var(--text-color-gray);
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 16px;
 }
 
 .groundForm > ul > li{
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: var(--Normal-big-text-size);
 }

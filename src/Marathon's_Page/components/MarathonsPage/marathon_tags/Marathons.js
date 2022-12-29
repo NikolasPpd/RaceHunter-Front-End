@@ -6,9 +6,9 @@ import "./marathons.css"
 export default  function Marathons(props) {
   return (
         <div className='marathon-tag'>
-        <img src={props.url}  alt='run'></img>
+        <img src={props.url}  alt='run' className='marathons-img'></img>
             <div className='tag-elements'>
-                <h2 className='marathon-title'>{props.name}</h2>
+                <h1 className='marathon-title'>{props.name}</h1>
                 <p className='marathons-location'><span className='icons'><ImLocation/></span> {props.name}</p>
                 <p className='marathon-date'><span className='icons' ><SlCalender/></span> {props.width}</p>
                 <p className='marathon-dist'>{props.height}</p>

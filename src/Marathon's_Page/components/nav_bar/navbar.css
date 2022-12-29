@@ -1,12 +1,18 @@
 .Extra{
-    text-align: right;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 20%;
 }
+
 
 .Home{
     border: none;
     outline: none;
     color: var(--text-color-gray);
     background-color: white;
+    font-size: var(--Normal-smallerHeaders-size);
   }
   
   .LogIn{
@@ -15,24 +21,35 @@
       outline: none;
       border: none;
       padding: 8px;
-      width: 90px;
+      width: 160px;
       color: white;
+      font-size: var(--Normal-smallerHeaders-size);
   }
 
   .Extra > span + span{
     padding: 10px
 }
 
-.Anazitisi{
+.search{
     text-align: center;
     position: relative;
 }
 
+.home-link{
+    color: var(--text-color-gray);
+    transition: 400ms ease-in-out;
+}
+
+.home-link:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 .texting{
     border-radius: 20px;
-    font-size: var(--Normal-mid-text-size);
+    font-size: var(--Normal-smallerHeaders-size);
     height: fit-content;
-    width: 400px;
+    width: 533px;
     padding: 5px 7px;
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 3px rgb(154, 154, 154);
@@ -41,7 +58,7 @@
 .search-button{
     height: fit-content;
     border-radius: 0 20px 20px 0;
-    font-size: var(--Normal-mid-text-size);
+    font-size: var(--Normal-smallerHeaders-size);
     height: fit-content;
     padding: 5px 7px;
     border: 2px solid var(--primary-color);
@@ -69,6 +86,6 @@ header{
 }
 
 .linkimage{
-    width: 17%;
-    margin-left: -60px;
+    width: 300px;
+    margin-left: -80px;
 }

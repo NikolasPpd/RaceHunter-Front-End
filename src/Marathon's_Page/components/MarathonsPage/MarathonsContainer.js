@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import * as ReactDOM from 'react-dom';
-import Navbar from '../NavBar/Navbar'
-import Filters from './Filters/Filts/Filters'
-import Ground from "../MarathonsPage/Filters/Ground/Ground"
-import MarathonType from "../MarathonsPage/Filters/MarathonsType/MarathonType"
-import RaceAmenities from "../MarathonsPage/Filters/RaceAmenities/RaceAmenities"
-import Api from "./Api"
-import Footer from "../Footer/Footer"
+import Navbar from '../nav_bar/Navbar';
+import Filters from './Filters/filts/Filters';
+import Ground from "./Filters/ground/Ground";
+import MarathonType from "./Filters/marathonsType/MarathonType";
+import RaceAmenities from "./Filters/race_amenities/RaceAmenities";
+import Api from "./Api";
+import Footer from "../footer/Footer";
 
 
 export default function Mars(){
@@ -28,10 +28,9 @@ export default function Mars(){
               <Ground/>
               <hr></hr>
               <RaceAmenities/>
-              <hr></hr>
             </div>
           {/* Ως εδω */}
-          <div className='marathonsPageCont'>
+          <div className='marathons-page-cont'>
             <Api/>
           </div>
             </div>

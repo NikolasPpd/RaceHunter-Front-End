@@ -1,11 +1,11 @@
 .marathon-tag{
     display: flex;
     margin-bottom: 40px;
-    background-color: rgb(240, 239, 239);
-    width: 70%;
+    background-color: #f4f4f4;
+    width: 800px;
     border-radius: 15px;
     position: relative;
-    height: fit-content;
+    height: 170px;
 }
 
 .marathon-tag:hover{
@@ -13,18 +13,24 @@
 }
 
 
-img{
-    width: 20%;
+.marathons-img{
+    width: 220px;
+    height: 170px;
     border-radius: 15px 0 0 15px;
 }
+
+.marathon-title{
+    font-size: var(--Normal-subHeaders-size) !important;
+}
+
 
 .tag-elements{
     display: flex;
     flex-direction: column;
     margin-left: 7px;
-    gap: 9px;
+    gap: 12px;
     padding: 20px 10px;
-    font-size: var(--Normal-text-size)
+    font-size: var(--Normal-smallerHeaders-size)
 }
 
 .marathon-dist{

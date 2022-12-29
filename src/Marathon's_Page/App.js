@@ -1,8 +1,8 @@
 import React from 'react'
 import * as ReactDOM from 'react-dom';
-import Navbar from './components/NavBar/Navbar';
-import Footer from './components/Footer/Footer';
-import MarathonsContainer from "../Marathon's_Page/components/MarathonsPage/MarathonsContainer"
+import Navbar from './components/nav_bar/Navbar';
+import Footer from './components/footer/Footer';
+import MarathonsContainer from "./components/MarathonsPage/MarathonsContainer"
 import './styles.css'
 
 

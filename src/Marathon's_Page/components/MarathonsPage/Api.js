@@ -1,5 +1,5 @@
 import React from 'react'
-import Marathons from "../MarathonsPage/MarathonTags/Marathons"
+import Marathons from "./marathon_tags/Marathons"
 import axios from "axios"
 
 export default function Api(){
