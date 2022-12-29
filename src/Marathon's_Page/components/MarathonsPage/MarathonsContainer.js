@@ -9,7 +9,7 @@ import Api from "./Api";
 import Footer from "../footer/Footer";
 
 
-export default function Mars(){
+export default function MarathonsContainer(){
 
     return (
         <div>
