@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import Navbar from '../navbar/Navbar';
 import Filters from './Filters/filts/Filters';
 import Ground from "./Filters/ground/Ground";
-import MarathonType from "./Filters/marathonsType/MarathonType";
+import MarathonType from "./Filters/marathons_type/MarathonType";
 import RaceAmenities from "./Filters/race_amenities/RaceAmenities";
 import Api from "./Api";
 import Footer from "../footer/Footer";
