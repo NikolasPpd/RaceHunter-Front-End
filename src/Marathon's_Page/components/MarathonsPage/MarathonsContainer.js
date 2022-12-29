@@ -1,12 +1,12 @@
 import React from 'react'
 import * as ReactDOM from 'react-dom';
-import Navbar from './Navbar'
-import Filters from './Filters'
-import Ground from './Ground'
-import MarathonType from './MarathonType'
-import RaceAmenities from './RaceAmenities'
-import Api from './Api'
-import Footer from './components/Footer';
+import Navbar from '../NavBar/Navbar'
+import Filters from './Filters/Filts/Filters'
+import Ground from "../MarathonsPage/Filters/Ground/Ground"
+import MarathonType from "../MarathonsPage/Filters/MarathonsType/MarathonType"
+import RaceAmenities from "../MarathonsPage/Filters/RaceAmenities/RaceAmenities"
+import Api from "./Api"
+import Footer from "../Footer/Footer"
 
 
 export default function Mars(){
@@ -31,7 +31,9 @@ export default function Mars(){
               <hr></hr>
             </div>
           {/* Ως εδω */}
+          <div className='marathonsPageCont'>
             <Api/>
+          </div>
             </div>
             <Footer/>
         </div>

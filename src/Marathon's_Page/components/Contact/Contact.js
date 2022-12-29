@@ -1,6 +1,7 @@
 import React from "react"; 
-import Navbar from "./Marathon's_Page/Navbar";
-import Footer from "./Marathon's_Page/components/Footer"
+import Navbar from "../NavBar/Navbar";
+import Footer from "../Footer/Footer";
+import "./contact.css";
 
 export default function Contact(){
     return (

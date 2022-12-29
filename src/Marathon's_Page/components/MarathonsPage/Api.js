@@ -1,7 +1,5 @@
 import React from 'react'
-import Footer from './components/Footer'
-import Marathons from './components/Marathons'
-import "./styles.css"
+import Marathons from "../MarathonsPage/MarathonTags/Marathons"
 import axios from "axios"
 
 export default function Api(){
@@ -25,16 +23,10 @@ export default function Api(){
 
  
   return (
-    <div className='container'>
-      <div className='nav'></div>
-      <div className='marathons-page'>
-        <div className='filters'></div>
+  
         <div className='all-marathons'>
                   {allmars}
           </div>
-      </div>
-        {/* <Footer/> */}
-    </div>
   )
     
 }
