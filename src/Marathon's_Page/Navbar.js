@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import  {Link} from "react-router-dom";
+import  { Link} from "react-router-dom";
 import './styles.css'
 import img from './images/RaceHunter_Gradient_Logo.png';
 
@@ -23,7 +23,7 @@ export default function Navbar(){
                 
             </div>
             <div className='Extra'>
-                <span><button className='Home'>Αρχική</button></span>
+                <span><Link to="./Marathon's_Page/App"><button className='Home'>Aρχική</button> </Link> </span>
                 <span><button className='LogIn'>Σύνδεση</button></span>
             </div>
         </header>
