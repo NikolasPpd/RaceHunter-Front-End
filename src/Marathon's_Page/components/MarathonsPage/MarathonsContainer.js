@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import Navbar from '../nav_bar/Navbar';
+import Navbar from '../navbar/Navbar';
 import Filters from './Filters/filts/Filters';
 import Ground from "./Filters/ground/Ground";
 import MarathonType from "./Filters/marathonsType/MarathonType";
