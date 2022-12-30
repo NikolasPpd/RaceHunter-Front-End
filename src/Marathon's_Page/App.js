@@ -1,8 +1,9 @@
 import React from 'react'
 import * as ReactDOM from 'react-dom';
-import Navbar from './Navbar';
-import Footer from './components/Footer';
-import Mars from './Mars';
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
+import MarathonsContainer from "./components/MarathonsPage/MarathonsContainer"
+import './styles.css'
 
 
 export default function App() {
@@ -23,7 +24,7 @@ export default function App() {
              </div>
              
             <Footer />
-
+            {/* <MarathonsContainer/> */}
       </div>
   )
   

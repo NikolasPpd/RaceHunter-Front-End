@@ -7,16 +7,25 @@
 
 /* left side------------------------------------------------- */
 
+.footer-head{
+    font-size: var(--Normal-big-headers-size);
+}
+
 .left-side-ul{
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.left-side-ul > li{
+.left-side-ul > li, .footer-link{
     color: var(--text-color-gray);
     margin-bottom: 10px;
     width: fit-content;
-    transition: 400ms;
+    transition: 400ms ease-in-out;
+    font-size: var(--Normal-smallerHeaders-size);
+}
+
+.footer-link:hover{
+    color: var(--primary-color);
 }
 
 .left-side-ul > li:hover{
@@ -42,6 +51,7 @@
 .find-us{
     display: block;
     margin-bottom: 20px;
+    font-size: var(--Normal-smallerHeaders-size);
 }
 
 .right-side-ul{
@@ -58,8 +68,8 @@
     align-items: center;
     padding: 10px;
     font-size: 30px;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     text-decoration: none;
     border-radius: 50px;
     transition: 400ms;

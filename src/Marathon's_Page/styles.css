@@ -7,27 +7,30 @@
 
 
 :root{
+    --Normal-big-headers-size: 45px;
     --Normal-headers-size: 30px;
     --Normal-subHeaders-size: 25px;
     --Normal-smallerHeaders-size: 20px;
     
     --primary-color: #2563EB;
 
-    --text-color-gray: rgb(169, 169, 169);
+    --text-color-gray: #6B7280;
     --text-color-black: black;
+    --Normal-big-text-size: 18px;
     --Normal-text-size: 15px;
     --Normal-mid-text-size: 17px
 }
+
 
 body{
     font-family:sans-serif, serif;
 }
 
-.container{
+/* .container{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+} */
 
 ul{
     list-style: none;
@@ -37,89 +40,24 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.marathons-page{
-    margin-top: 60px;
-    display: flex;
-}
-
-.all-marathons{
     margin-top: 60px;
 }
 
-.Extra{
-    text-align: right;
-}
-
-.Home{
-    border: none;
-    outline: none;
-    color: var(--text-color-gray);
-    background-color: white;
-  }
-  
-  .LogIn{
-      border-radius: 15px;
-      background-color: var(--primary-color);
-      outline: none;
-      border: none;
-      padding: 8px;
-      width: 90px;
-      color: white;
-  }
-
-  .Extra > span + span{
+.Extra > span + span{
     padding: 10px
 }
 
-.Anazitisi{
-    text-align: center;
-    position: relative;
-}
 
-.texting{
-    border-radius: 20px;
-    font-size: var(--Normal-mid-text-size);
-    height: fit-content;
-    width: 400px;
-    padding: 5px 7px;
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 0 3px rgb(154, 154, 154);
-}
-
-.search-button{
-    height: fit-content;
-    border-radius: 0 20px 20px 0;
-    font-size: var(--Normal-mid-text-size);
-    height: fit-content;
-    padding: 5px 7px;
-    border: 2px solid var(--primary-color);
-    position: absolute;
-    right: 0;
-    color: white;
-    background-color: var(--primary-color);
-}
-
-.image{
-    width: 100%;
-}
-
-header{
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    padding: 10px 100px;
-    position: fixed;
-    box-shadow: 1px 0 10px rgb(178, 178, 178);
-    background-color: white;
+.marathons-page-cont{
+    margin-top: 60px;
 }
 
 hr{
-    border: 1px solid var(--text-color-gray);
+    border: 1px solid rgba(107, 114, 128, 0.5);
+}
+
+a, Link{
+    text-decoration: none;
 }
 
 select{
@@ -128,19 +66,12 @@ select{
 }
 
 .filts{
+    margin-top: 30px;
     padding-left: 40px;
-    width: 40%;
-}
-
-.Extra > span + span{
-    padding: 10px
-}
-
-.linkimage{
-    width: 17%;
-    margin-left: -60px;
+    width: 300px;
 }
 
 .marathons-cont{
     display: flex;
+    gap: 100px;
 }
