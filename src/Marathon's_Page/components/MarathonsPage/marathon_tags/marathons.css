@@ -20,7 +20,7 @@
 }
 
 .marathon-title{
-    font-size: var(--Normal-subHeaders-size) !important;
+    font-size: var(--Normal-subHeaders-size);
 }
 
 
