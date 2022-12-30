@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       element: <Contact /> 
     },
     {// να σημειωθεί ότι μια σελίδα για να προστεθεί σε Link πρέπρει πρώτα να προστεθεί εδώ το path της 
-      path: "/src/Marathon's_Page/Mars", 
+      path: "/marathons", 
       element: <MarathonsContainer /> 
     }
   ]);
