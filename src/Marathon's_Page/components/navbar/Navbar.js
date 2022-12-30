@@ -23,7 +23,7 @@ export default function Navbar(){
                 
             </div>
             <div className='Extra'>
-                <span><button className='Home'><Link className='home-link' to="./Marathon's_Page/App">Aρχική</Link></button></span>
+                <span><button className='Home'><Link className='home-link' to="/">Aρχική</Link></button></span>
                 <span><button className='LogIn'>Σύνδεση</button></span>
             </div>
         </header>

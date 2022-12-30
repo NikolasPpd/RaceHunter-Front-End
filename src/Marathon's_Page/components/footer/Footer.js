@@ -9,7 +9,7 @@ export default  function Footer() {
             <h1 className='footer-head'>RaceHunter</h1>
             <ul className='left-side-ul'>
                 <li>Σχετικά με εμάς</li>
-                <li><Link className='footer-link' to="./contact">Επικοινωνία</Link></li>
+                <li><Link className='footer-link' to="/contact">Επικοινωνία</Link></li>
                 <li>Όροι χρήσης</li>
                 <li>Πολιτική Απορρήτου</li>
             </ul>
