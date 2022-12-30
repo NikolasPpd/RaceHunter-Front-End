@@ -11,7 +11,7 @@ export default function App() {
   return (
       <div>
         
-          {/* <Navbar />
+          <Navbar />
             <br></br>
             <br></br>
             <br></br>
@@ -23,8 +23,8 @@ export default function App() {
                
              </div>
              
-            <Footer /> */}
-            <MarathonsContainer/>
+            <Footer />
+            {/* <MarathonsContainer/> */}
       </div>
   )
   
