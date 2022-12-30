@@ -7,18 +7,18 @@
 
 
 :root{
-    --Normal-big-headers-size: 40px;
-    --Normal-headers-size: 25px;
-    --Normal-subHeaders-size: 20px;
-    --Normal-smallerHeaders-size: 15px;
+    --Normal-big-headers-size: 45px;
+    --Normal-headers-size: 30px;
+    --Normal-subHeaders-size: 25px;
+    --Normal-smallerHeaders-size: 20px;
     
     --primary-color: #2563EB;
 
     --text-color-gray: #6B7280;
     --text-color-black: black;
-    --Normal-big-text-size: 16px;
-    --Normal-text-size: 13px;
-    --Normal-mid-text-size: 14px
+    --Normal-big-text-size: 18px;
+    --Normal-text-size: 15px;
+    --Normal-mid-text-size: 17px
 }
 
 
