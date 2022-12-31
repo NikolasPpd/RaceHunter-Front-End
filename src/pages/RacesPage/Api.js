@@ -1,6 +1,6 @@
-import React from 'react'
-import Marathons from "./marathon_tags/Marathons"
-import axios from "axios"
+import React from "react";
+import Card from "./RaceCard";
+import axios from "axios";
 
 export default function Api(){
 
@@ -17,7 +17,7 @@ export default function Api(){
     
     const allmars = marathons.map(mar => {
         return(
-            <Marathons key = {mar.id} {...mar}/>
+            <Card key = {mar.id} {...mar}/>
         )
     })
 

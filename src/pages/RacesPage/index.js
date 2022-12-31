@@ -1,12 +1,12 @@
-import React from 'react';
-import * as ReactDOM from 'react-dom';
-import Navbar from '../navbar/Navbar';
-import Filters from './Filters/filts/Filters';
-import Ground from "./Filters/ground/Ground";
-import MarathonType from "./Filters/marathons_type/MarathonType";
-import RaceAmenities from "./Filters/race_amenities/RaceAmenities";
+import React from "react";
+// import * as ReactDOM from 'react-dom';
+import Navbar from "../../components/Navbar";
+import GeneralFilters from "./Filters/GeneralFilters";
+import DistanceFilters from "./Filters/DistanceFilters";
+import TerrainFilters from "./Filters/TerrainFilters";
+import AmenitiesFilters from "./Filters/AmenitiesFilters";
 import Api from "./Api";
-import Footer from "../footer/Footer";
+import Footer from "../../components/Footer";
 
 
 export default function MarathonsContainer(){
@@ -21,13 +21,13 @@ export default function MarathonsContainer(){
           <div className='marathons-cont'>
           {/* Ολα αυτα πρέπει να γινουν ένα component */}
             <div className='filts'> 
-              <Filters/>
+              <GeneralFilters/>
               <hr></hr>
-              <MarathonType/>
+              <DistanceFilters/>
               <hr></hr>
-              <Ground/>
+              <TerrainFilters/>
               <hr></hr>
-              <RaceAmenities/>
+              <AmenitiesFilters/>
             </div>
           {/* Ως εδω */}
           <div className='marathons-page-cont'>

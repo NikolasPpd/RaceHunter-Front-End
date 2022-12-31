@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './marathonsType.css'
+import './distance-filters.css';
 
-
+// Rename το function και όλες τις σχετικές μεταβλητές σε "DistanceFilters"
 export default function MarathonType(){
 
    //Marathon's distance[Μήκοι Διαδρομής Μαραθωνίων]

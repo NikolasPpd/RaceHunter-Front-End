@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom/client';
-import "./raceAmerities.css"
+// import ReactDOM from 'react-dom/client';
+import "./amenities-filters.css"
 
+// Rename το function και όλες τις σχετικές μεταβλητές σε "AmenitiesFilters"
 export default function RaceAmenities(){
 
 

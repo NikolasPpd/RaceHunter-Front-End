@@ -1,8 +1,9 @@
-import React from 'react'
-import {SlCalender} from "react-icons/sl"
-import {ImLocation} from "react-icons/im"
-import "./marathons.css"
+import React from "react";
+import {SlCalender} from "react-icons/sl";
+import {ImLocation} from "react-icons/im";
+import "./race-card.css";
 
+// Rename το function και όλες τις σχετικές μεταβλητές και classNames σε "RaceCard"
 export default  function Marathons(props) {
   return (
         <div className='marathon-tag'>

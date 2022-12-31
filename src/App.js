@@ -1,9 +1,9 @@
 import React from 'react'
-import * as ReactDOM from 'react-dom';
-import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
-import MarathonsContainer from "./components/MarathonsPage/MarathonsContainer"
-import './styles.css'
+// import * as ReactDOM from 'react-dom';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import RacesPage from "./pages/RacesPage";
+import './assets/styles.css';
 
 
 export default function App() {
