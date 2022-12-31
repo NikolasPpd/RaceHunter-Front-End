@@ -5,7 +5,7 @@
     width: 800px;
     border-radius: 15px;
     position: relative;
-    height: 170px;
+    height: fit-content;
 }
 
 .marathon-tag:hover{
