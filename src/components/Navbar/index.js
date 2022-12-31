@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import  { Link} from "react-router-dom";
-import './navbar.css'
-import img from '../images/RaceHunter_Gradient_Logo.png';
+import "./navbar.css";
+import img from "../../assets/RaceHunter_Gradient_Logo.png";
 
 export default function Navbar(){
      
     const[query,setQuery] = useState("");
-    console.log(query)
+    console.log(query);
     return (
       <div>
          <header>

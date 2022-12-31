@@ -6,7 +6,6 @@
     width: 20%;
 }
 
-
 .Home{
     border: none;
     outline: none;
@@ -15,16 +14,16 @@
     font-size: var(--Normal-smallerHeaders-size);
   }
   
-  .LogIn{
-      border-radius: 15px;
-      background-color: var(--primary-color);
-      outline: none;
-      border: none;
-      padding: 8px;
-      width: 160px;
-      color: white;
-      font-size: var(--Normal-smallerHeaders-size);
-  }
+.LogIn{
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    padding: 8px;
+    width: 160px;
+    color: white;
+    font-size: var(--Normal-smallerHeaders-size);
+}
 
   .Extra > span + span{
     padding: 10px

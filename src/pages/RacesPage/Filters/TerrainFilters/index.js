@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import "./ground.css";
+import React, { useState } from "react";
+import "./terrain-filters.css";
 
-
+// Rename το function και όλες τις σχετικές μεταβλητές σε "TerrainFilters"
 export default function Distance(){
 
 

@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import "./filters.css";
-import {MdOutlineGpsFixed} from "react-icons/md"
-import {RiPlayList2Fill} from "react-icons/ri"
+import React, { useState } from "react";
+import {MdOutlineGpsFixed} from "react-icons/md";
+import {RiPlayList2Fill} from "react-icons/ri";
+import "./general-filters.css";
 
+// Rename το function και όλες τις σχετικές μεταβλητές σε "GeneralFilters"
 export default function Filters(){
 
 
