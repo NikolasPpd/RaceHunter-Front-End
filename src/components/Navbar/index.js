@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import  { Link} from "react-router-dom";
 import "./navbar.css";
-import img from "../../assets/RaceHunter_Gradient_Logo.png";
+import img from "../../assets/racehunter-logo.svg";
 
 export default function Navbar(){
      
