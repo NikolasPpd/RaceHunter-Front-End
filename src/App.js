@@ -31,6 +31,13 @@ export default function App() {
                </div>
                
              </div>
+           
+
+           <div className='features'>
+              <section className='feature1'>
+                <img src='src\assets\info.png'/>
+              </section>
+            </div>
             {/*<RacesPage/>*/}
              
             <Footer />

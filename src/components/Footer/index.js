@@ -6,7 +6,7 @@ export default  function Footer() {
   return (
     <footer className='footer'>
         <div className="left-side">
-            <h1 className='footer-head'>RaceHunter</h1>
+            <h1 className='footer-head'>Race Hunter</h1>
             <ul className='left-side-ul'>
                 <li>Σχετικά με εμάς</li>
                 <li><Link className='footer-link' to="/contact">Επικοινωνία</Link></li>
