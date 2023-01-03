@@ -23,7 +23,7 @@
 
 
 body{
-    font-family:sans-serif, serif;
+    font-family: sans-serif, serif;
 }
 
 /* .container{
@@ -75,3 +75,135 @@ select{
     display: flex;
     gap: 100px;
 }
+
+
+.hero {
+    background-image: url(./banner-img.png);
+    background-repeat: no-repeat;
+   
+    background-position: center, center;
+    background-size: cover;
+    width: 1470px;
+    height: 100vh;
+    top: 76px;
+    
+}
+
+
+.frame{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+
+    position: absolute;
+    width: 1327px;
+    height: 482px;
+    left: 98px;
+    top: 105px;
+}
+
+
+.title{
+   
+    width: 673px;
+    height: 192px;        
+    color: #1a54d1;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;        
+    font-weight: 800;
+    font-size: 80px;        
+    line-height: 120%;
+    order: 0;
+    flex-grow: 0;
+}
+
+.subtitle{
+    margin-top: 25px;
+    left: 10px;
+    width: 600px; 
+  
+    font-weight: 400;
+    font-size: 21px;  
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.015em;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    
+    color: #6B7280;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.ActionBtns{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 25px;
+
+    width: 598px;
+    height: 53px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.CTAbtn {    
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    gap: 10px;
+    width: 272px;
+    height: 53px;
+    border-radius: 30px;
+    background: #2563EB;
+    border: 3px solid #2563EB;
+
+    /*Text*/
+    color: #FFFFFF;
+    font-size: 24px;
+       
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+}
+
+.LearnMorebtn{
+   
+    box-sizing: border-box; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    gap: 10px;
+    width: 272px;
+    height: 53px;
+    border-radius: 30px;
+
+    /*Text*/
+    font-size: 20px;
+    color: #6B7280;
+
+    /* Inside auto layout */
+        
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border: 3px solid #6B7280;
+    
+}
+
+/* .main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+} */

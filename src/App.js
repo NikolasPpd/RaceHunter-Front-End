@@ -9,22 +9,31 @@ import './assets/styles.css';
 export default function App() {
 
   return (
-      <div>
+      <div className='main'>
+        
         
           <Navbar />
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <div>
-                <h1>WELCOME</h1>
-               
+          
+           <div className='hero'>
+          
+               <div className='frame'> 
+                 <br></br>
+                 <br></br>
+
+                <h1 className='title'>Όλοι οι αγώνες σε ένα σημείο!</h1>
+                <h4 className='subtitle'>Η #1 πλατφόρμα αναζήτησης αγώνων δρόμου στην Ελλάδα!</h4>
+
+                <div className='ActionBtns'>
+                  <button className='CTAbtn' > Δες τους αγώνες </button>
+                <button className='LearnMorebtn'>Μάθε περισσότερα</button>
+                </div>
+      
+               </div>
                
              </div>
+            {/*<RacesPage/>*/}
              
             <Footer />
-            {/* <MarathonsContainer/> */}
       </div>
   )
   
