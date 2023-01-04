@@ -2,6 +2,7 @@ import React from 'react'
 // import * as ReactDOM from 'react-dom';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Image from  './assets/info.png';
 import RacesPage from "./pages/RacesPage";
 import './assets/styles.css';
 
@@ -35,7 +36,8 @@ export default function App() {
 
            <div className='features'>
               <section className='feature1'>
-                <img src='src\assets\info.png'/>
+                <img src={Image} className='feat1-img' />
+                <h2 className='feat-title'>Όλες οι πληροφορίες για τους αγώνες</h2>
               </section>
             </div>
             {/*<RacesPage/>*/}
