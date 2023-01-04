@@ -25,7 +25,7 @@ export default function App() {
                 <h4 className='subtitle'>Η #1 πλατφόρμα αναζήτησης αγώνων δρόμου στην Ελλάδα!</h4>
 
                 <div className='ActionBtns'>
-                  <button className='CTAbtn' > Δες τους αγώνες </button>
+                  <button className='CTAbtn'>Δες τους αγώνες</button>
                 <button className='LearnMorebtn'>Μάθε περισσότερα</button>
                 </div>
       
