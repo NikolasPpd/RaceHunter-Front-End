@@ -330,4 +330,5 @@ select{
 .enroll-button:hover{
     background-color: #ff9900e8;
     cursor: pointer;
+    transition: 400ms;
 }
