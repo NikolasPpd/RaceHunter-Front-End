@@ -13,7 +13,7 @@
     --Normal-smallerHeaders-size: 15px;
 
     --primary-color: #2563EB;
-    --darker-primary-color: #1a54d1;
+    --darker-primary-color: #1748b4;
 
     --text-color-gray: #6B7280;
     --text-color-black: black;
@@ -121,8 +121,6 @@ select{
     top: 200px;  
 }
 
-
-
 .title{
    
     width: 673px;
@@ -218,8 +216,8 @@ select{
 }
 
 .CTAbtn:hover {
-    background: #0c3693;
-    border: 3px solid #0c3693;
+    background: var(--darker-primary-color);
+    border: 3px solid var(--darker-primary-color);
     cursor: pointer;
 }
 
