@@ -13,6 +13,7 @@
     --Normal-smallerHeaders-size: 15px;
 
     --primary-color: #2563EB;
+    --darker-primary-color: #1a54d1;
 
     --text-color-gray: #6B7280;
     --text-color-black: black;
@@ -21,6 +22,7 @@
     --Normal-mid-text-size: 14px;
     --Normal-bigger-headers-size: 80px;
     --primary-font-family: 'Manrope', sans-serif;
+    
     
 }
 
@@ -128,7 +130,7 @@ select{
     font-weight: 800;
     font-size: var(--Normal-bigger-headers-size);        
     line-height: 120%;
-    color: #1a54d1;
+    color: var(--darker-primary-color);
     order: 0;
     flex-grow: 0;
 }
@@ -143,7 +145,7 @@ select{
     display: flex;
     align-items: center;
     letter-spacing: 0.015em;
-    font-feature-settings: 'tnum' on, 'lnum' on;
+    font-feature-settings: 'tnum' on;
     
     color: #6B7280;
     flex: none;
@@ -171,9 +173,9 @@ select{
 
 .CTAbtn {    
 
-    flex-direction: row;
+    /* flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding: 10px 40px;
     gap: 10px;
     width: 272px;
@@ -187,17 +189,14 @@ select{
     color: #FFFFFF;
     font-size: 24px;
        
-        /* Inside auto layout */
-        flex: none;
-        order: 1;
-        flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
 .LearnMorebtn{
    
-    box-sizing: border-box; 
-    justify-content: center;
-    align-items: center;
     padding: 10px 40px;
     gap: 10px;
     width: 272px;
@@ -239,25 +238,13 @@ select{
     top: 950px;
 }
 
-.feature2{
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    gap: 50px;
-    padding: 0vh 15vh 0vh 15vh;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
 
-.feature1, .feature3{
+
+.feature1, .feature2,.feature3{
     display: flex;
     flex-direction: row;
     justify-content: space-between ;
-    align-items: start;
+    align-items: flex-start;
     gap: 20px;
     padding: 0vh 15vh 0vh 15vh;
     flex: none;
@@ -266,27 +253,11 @@ select{
     flex-grow: 0;
 }
 
-
-
-#feat1-img #feat3-img{ 
- 
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-#feat2-img{
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-#description{
+.description{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
     padding: 12vh 0vh 12vh 10vh;
     gap: 20px;
     
@@ -297,22 +268,13 @@ select{
     flex-grow: 1;
 }
 
-#header{
+.header{
     color: var(--primary-color);
     font-size: var(--Normal-big-headers-size);
-    font-weight: 700;
-    /* display: flex;
-    align-items: flex-start; */
-    /* padding: 0vh 10vh 10vh;
-    margin-top: 10vh; */
 }
 
-#info{
+.info{
     width: 614px;
-height: 54px;
-font-style: normal;
-font-weight: 400;
-font-size: var(--Normal-subHeaders-size);
-line-height: 130%;
-
+    height: 54px;
+    font-size: var(--Normal-subHeaders-size);
 }
