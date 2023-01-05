@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 // import * as ReactDOM from 'react-dom';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -12,6 +12,8 @@ import './assets/styles.css';
 
 export default function App() {
 
+  const[query,setQuery] = useState("");
+    console.log(query);
   return (
       <div className='main'>
         
@@ -62,6 +64,22 @@ export default function App() {
                 </span>
                 <img src={Feat3} id='feat3-img'/> 
               </div>
+            </section>
+
+            <section className='newsletter'>
+              <h1 className='news-title'>Ενημερώσου για όλους τους αγώνες</h1>
+              <p className='news-subtitle'>Συμπλήρωσε το email σου για να λαμβάνεις νέα και ενημερώσεις σχετικά με τους πιο πρόσφατους αγώνες!</p>
+
+              <div className='enroll'>
+                <input 
+                    className = "mail" 
+                    type = "text" 
+                    placeholder='email@example.com'
+                    onChange={(e => setQuery(e.target.value))}/>
+                    <button className='enroll-button'>Eγγράψου</button>
+                
+              </div>
+
             </section>
 
 

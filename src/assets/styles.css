@@ -276,3 +276,58 @@ select{
     height: 54px;
     font-size: var(--Normal-subHeaders-size);
 }
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 120px;
+    gap: 25px;
+    width: 100%;
+    background: #0D1317;
+}
+
+.news-title{
+    color: #FFFFFF;
+    font-size: var(--Normal-big-headers-size);
+}
+
+.news-subtitle{
+    color: #FFB400;
+    font-size: var(--Normal-subHeaders-size);
+}
+
+.enroll{
+    position: relative;
+    text-align: center;
+}
+
+.mail{
+    
+    width: 430px;
+    height: fit-content ;
+    background: #F4F4F4;
+    border-radius: 30px 0px 0px 30px;
+    border: 2px solid;
+    font-size: var(--Normal-subHeaders-size);
+    padding: 0px 60px;
+    height: 55px;
+    text-align: center;
+}
+
+.enroll-button{
+    padding: 5px 10px;
+    background: #FFB400;
+    border-radius: 0px 30px 30px 0px;
+    font-family: var(--primary-font-family);
+    font-size: var(--Normal-subHeaders-size);
+    border: 2px solid;
+    height: 55px;
+    position: absolute;
+    font-weight: 800;
+}
+
+.enroll-button:hover{
+    background-color: #ff9900e8;
+    cursor: pointer;
+}
