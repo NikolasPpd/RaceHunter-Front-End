@@ -60,47 +60,40 @@
     gap: 20px;
 }
 
-/* sociial media-------------------------------------------- */
+/* social media-------------------------------------------- */
 
-.fa {
+.social-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    font-size: 30px;
+    font-size: 40px;
+    color: #4d4d4d;
     width: 45px;
     height: 45px;
-    text-decoration: none;
-    border-radius: 50px;
     transition: 400ms;
   }
 
-.fa:hover {
-    opacity: 0.7;
+.social-icon:hover {
     cursor: pointer;
 }
 
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
+#icon-fb:hover {
+    color: #4267b2;
 }
 
-.fa-instagram {
-    background: #125688;
-    color: white;
+#icon-ig:hover {
+    color: #e95950;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-  
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
+#icon-twitter:hover {
+    color: #00acee;
 }
 
-/* sociial media-------------------------------------------- */
+#icon-yt:hover {
+    color: #ff0000;
+}
+
+/* social media-------------------------------------------- */
 
 
 /* right side------------------------------------------------- */
