@@ -220,7 +220,7 @@ select{
 
 .CTAbtn:hover {
     background: #0c3693;
-    border: #0c3693;
+    border: 3px solid #0c3693;
     cursor: pointer;
 }
 
