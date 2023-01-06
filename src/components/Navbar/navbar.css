@@ -27,9 +27,6 @@
     cursor: pointer;
 }
 
-.Extra > span + span{
-    padding: 10px
-}
 
 .search{
     text-align: center;
