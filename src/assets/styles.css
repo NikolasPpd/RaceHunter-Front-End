@@ -227,13 +227,11 @@ select{
     cursor: pointer;
 }
 
-.features{
+.features {
     display: flex;
     flex-direction: column;
-    justify-content: space-between 30px;
     align-items: center;
     gap: 30px;
-    top: 950px;
 }
 
 
