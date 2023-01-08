@@ -30,7 +30,7 @@ export default function Filters(){
            <div className='filterElements'>
             <div className='nearMe'>
             <MdOutlineGpsFixed/>
-           <label>Αγώνες Κοντά μου</label>   
+           <label>Αγώνες κοντά μου</label>   
            <input
              type = "checkbox"
              id="nearSearch"
