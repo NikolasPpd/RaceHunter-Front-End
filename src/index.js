@@ -7,7 +7,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import RacesPage from "./pages/RacesPage";
 import ErrorPage from "./pages/ErrorPage";
-import ContactPage from "./pages/ContactPage"; 
+import ContactPage from "./pages/ContactPage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 //creating BrowserRouter
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
     {// να σημειωθεί ότι μια σελίδα για να προστεθεί σε Link πρέπρει πρώτα να προστεθεί εδώ το path της 
       path: "/races", 
       element: <RacesPage /> 
+    },
+    {
+      path: "/about-us", 
+      element: <AboutUsPage /> 
     }
   ]);
 

@@ -1,0 +1,86 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+    height: 100%;
+}
+
+.hero-img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    position:absolute;
+    width: 100%;
+    top: 215px;
+    justify-content: center;
+}
+
+.title {
+    font-size: 100px;
+    color: var(--primary-color);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 100px;
+}
+
+.feature1, .feature2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+    padding: 0vh 15vh 0vh 15vh;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header {
+    color: var(--primary-color);
+    font-size: var(--Normal-big-headers-size);
+}
+
+.info {
+    width: 614px;
+    height: 54px;
+    font-size: var(--Normal-subHeaders-size);
+}
+
+.feature2 > .description {
+    text-align: right;
+}
+
+.member-icons {
+    display: flex;
+    gap: 40px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
