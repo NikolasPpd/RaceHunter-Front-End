@@ -14,10 +14,6 @@ export default function MarathonsContainer(){
     return (
         <div>
           <Navbar/>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
           <div className='marathons-cont'>
           {/* Ολα αυτα πρέπει να γινουν ένα component */}
             <div className='filts'> 

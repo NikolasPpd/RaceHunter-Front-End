@@ -12,17 +12,9 @@ export default function App() {
       <div>
         
           <Navbar />
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
             <div>
                 <h1>WELCOME</h1>
-               
-               
-             </div>
-             
+            </div>
             <Footer />
             {/* <MarathonsContainer/> */}
       </div>
