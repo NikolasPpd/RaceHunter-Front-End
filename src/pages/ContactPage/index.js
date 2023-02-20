@@ -9,10 +9,6 @@ export default function ContactPage(){
     return (
         <div>
             <Navbar />
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
                 <div className="background-contact">
                     <h1 id="title-of-background">Επικοινωνήστε μαζί μας</h1>
                     <div className="contact-card">
