@@ -19,7 +19,7 @@ export default function ContactPage(){
                             <br></br>
                             <input className="contact-input" type="text" name="subject" placeholder="Θέμα"></input>
                             <br></br>
-                            <textarea id="message" className="contact-input" placeholder="Το μύνημα σας..."></textarea>
+                            <textarea id="message" className="contact-input" placeholder="Το μήνυμα σας..."></textarea>
                             <br></br>
                             <input id="send" type="submit" value="Αποστολή"></input>
                         </form>
