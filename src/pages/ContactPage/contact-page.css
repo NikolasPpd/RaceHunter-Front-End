@@ -14,15 +14,12 @@
 }
 
 .contact-card{
-    padding: 3vw 10vw 3vw 2vw; 
+    padding: 30px; 
     display: flex; 
     justify-content: space-between;
-    border-radius: 50px;
-    background-color: white;
-}
-
-.contact-card{
-    color: #6B7280; 
+    border-radius: 30px;
+    background-color: #F4F4F4;
+    color: var(--text-color-gray);
 }
 
 .contact-input{
