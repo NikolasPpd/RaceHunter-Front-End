@@ -9,7 +9,7 @@
 
 #title-of-background{
     font-size: 4vh; 
-    margin: .3vw 0vw .3vw 2vw; 
+    margin: .3vw 0vw 1vw 2vw; 
     color: #2563EB;
 }
 
@@ -38,8 +38,22 @@
     color: rgba(107, 114, 128, 0.7);
 }
 
-.contact-info{
-    padding: 5vw;
+.contact-info-grid{
+    place-self: center;
+    margin-right: 5vw;
+    padding-bottom: 5vh;
+    display: grid;
+    grid-template-columns: auto auto; 
+    grid-template-rows: 42px 40px ;
+    gap: 20px; 
+}
+
+.marker{
+    color: #2563EB;
+    border-radius: 50%;
+    border: 2px solid #2563EB;
+    padding: 4px;
+    font-size: 30px;
 }
 
 #message{
@@ -57,4 +71,8 @@
     border-radius: 10px;
     color: white; 
     background: #2563EB;
+}
+
+#send:hover{
+    cursor:pointer; 
 }
