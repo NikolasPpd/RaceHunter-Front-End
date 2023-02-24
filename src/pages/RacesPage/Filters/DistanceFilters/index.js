@@ -48,7 +48,7 @@ return (
             onChange={Handling}
             name = "Onekm"
           />
-          <label>1Km ({one})</label>
+          <label>1km ({one})</label>
           </li>
           <li>
           <input
@@ -58,7 +58,7 @@ return (
             onChange={Handling}
             name = "Twokm"
           />
-          <label>2Km ({two})</label>
+          <label>2km ({two})</label>
           </li>
           <li>
           <input
@@ -68,7 +68,7 @@ return (
             onChange={Handling}
             name = "Tenkm"
           />
-          <label>10Km ({ten})</label> 
+          <label>10km ({ten})</label> 
           </li>
           <li>
           <input

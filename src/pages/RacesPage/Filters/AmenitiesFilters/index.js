@@ -43,7 +43,7 @@ function HandlingAmenities(event){
             onChange={HandlingAmenities}
             name = "troph"
           />
-          <label>Τροφοδοσία({troph})</label>
+          <label>Τροφοδοσία ({troph})</label>
               </li>
               <li>
               <input
@@ -83,7 +83,7 @@ function HandlingAmenities(event){
             onChange={HandlingAmenities}
             name = "onlinepay"
           />
-          <label>Online-Pay ({onlinepay})</label>
+          <label>Online πληρωμή ({onlinepay})</label>
               </li>
             </ul>  
         </div>
