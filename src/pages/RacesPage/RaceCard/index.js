@@ -6,17 +6,16 @@ import "./race-card.css";
 // Rename το function και όλες τις σχετικές μεταβλητές και classNames σε "RaceCard"
 export default  function Marathons(props) {
   return (
-        <div className='marathon-tag'>
-        <img src={props.url}  alt='run' className='marathons-img'></img>
-            <div className='tag-elements'>
-                <h1 className='marathon-title'>{props.name}</h1>
-                <p className='marathons-location'><span className='icons'><ImLocation/></span> {props.name}</p>
-                <p className='marathon-date'><span className='icons' ><SlCalender/></span> {props.width}</p>
-                <p className='marathon-dist'>{props.height}</p>
-                <p className='marathon-pirce'>Από <span className='price'>{props.width}$</span></p>
-            </div>
-        </div>
-    
+    <div className='marathon-tag' title={props.name}>
+      <img src={props.url}  alt='run' className='marathons-img'></img>
+      <div className='tag-elements'>
+        <h1 className='marathon-title'>{props.name}</h1>
+        <p className='marathons-location'><span className='icons'><ImLocation/></span> {props.name}</p>
+        <p className='marathon-date'><span className='icons' ><SlCalender/></span> {props.width}</p>
+        <p className='marathon-dist'>{props.height}</p>
+        <p className='marathon-pirce'>Από <span className='price'>{props.width}$</span></p>
+      </div>
+    </div>
   )
 }
 
