@@ -1,24 +1,12 @@
-.groundForm{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.groundForm > p{
+.race-terrain-form > p {
     color: black;
-    margin-bottom: 15px;
+    margin: 15px 0;
     font-size: var(--Normal-subHeaders-size);
 }
 
-.groundForm > ul {
-    color: var(--text-color-gray);
+.race-terrain-elements {
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-}
-
-.groundForm > ul > li{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: var(--Normal-big-text-size);
+    color: var(--text-color-gray);
 }
