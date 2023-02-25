@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MdOutlineGpsFixed } from "react-icons/md";
+import { MdOutlineGpsFixed } from 'react-icons/md';
 import './location-checkbox.css';
 
 export default function LocationCheckbox({ label, initialChecked: initiallyChecked = false, onChange, name }) {

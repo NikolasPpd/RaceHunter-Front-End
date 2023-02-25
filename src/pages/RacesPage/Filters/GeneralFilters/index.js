@@ -1,59 +1,61 @@
 import React, { useState } from "react";
-import {MdOutlineGpsFixed} from "react-icons/md";
-import {RiPlayList2Fill} from "react-icons/ri";
+import { FaSortAmountDown } from "react-icons/fa";
 import "./general-filters.css";
+import LocationCheckbox from "../../../../components/LocationCheckbox";
 
-// Rename το function και όλες τις σχετικές μεταβλητές σε "GeneralFilters"
-export default function Filters(){
-
+export default function GeneralFilters() {
 
   //Marathon type flters [NearSearch,Sorting]
-  const [DataFFiliters , setDataFFiliters] = useState({nearS:false,Sorting:"ascending"})
+  const [generalFilters , setGeneralFilters] = useState({
+    nearbyEnabled: false,
+    sorting: 'newestFirst'
+  });
 
-  //Marathon type Event Handling
-  function Handle(event){
-    const {name,type,value,checked} = event.target
-    setDataFFiliters(FiltersData => {
-       return{
-         ...FiltersData ,[name] : type === "checkbox" ? checked : value
-        }
-    })
-      
+  function SortingHandler(event){
+    const {name, type, value, checked} = event.target
+    setGeneralFilters(FiltersData => {
+      return{
+        ...FiltersData,
+        [name] : type === "checkbox" ? checked : value
+      }
+    });
   }
 
+  function LocationHandler(){
+    if (generalFilters.nearbyEnabled === true){
+      navigator.geolocation.getCurrentPosition((position) => {
+        const { latitude, longitude } = position.coords;
+        // latitute και longitude του χρήστη για κλήση στο API
+    });
+    }
+  }
 
-
-    return (
-   <div>    
-    <form className='filtersForm'>
-           <p>Φίλτρα Αναζήτησης</p>  
-           <div className='filterElements'>
-            <div className='nearMe'>
-            <MdOutlineGpsFixed/>
-           <label>Αγώνες κοντά μου</label>   
-           <input
-             type = "checkbox"
-             id="nearSearch"
-             checked = {setDataFFiliters.nearS}
-             onChange={Handle}
-             name = "nearS"
-           />
-           </div>
-           <div className='list'>
-           <RiPlayList2Fill/>
-       <select 
-           type=""
-           id="sort"
-           value={setDataFFiliters.sort}
-           onChange={Handle}
-           name="Sorting"
-           >  
-         <option value="ascending">Αύξουσα</option>
-         <option value="descending">Φθίνουσα</option>
-       </select> 
-       </div>
-       </div>
-     </form>
+  return (
+    <div>    
+      <form className='filtersForm'>
+        <p>Φίλτρα Αναζήτησης</p>
+        <div className='filterElements'>
+          <LocationCheckbox
+            label='Αγώνες κοντά μου'
+            initiallyChecked={generalFilters.nearbyEnabled}
+            onChange={LocationHandler}
+            name='nearbyEnabled'
+          />
+          <div className='list'>
+            <FaSortAmountDown/>
+            <select 
+              type=""
+              id="sort"
+              value={generalFilters.sorting}
+              onChange={SortingHandler}
+              name="sorting"
+            >
+              <option value="newestFirst">Πρώτα οι νεότεροι</option>
+              <option value="oldestFirst">Πρώτα οι παλαιότεροι</option>
+            </select> 
+          </div>
+        </div>
+      </form>
     </div> 
-    )
+  );
 }
