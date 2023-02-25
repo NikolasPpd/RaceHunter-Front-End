@@ -1,101 +1,81 @@
 import React, { useState } from 'react';
 import './distance-filters.css';
+import CustomCheckbox from '../../../../components/CustomCheckbox';
 
 // Rename το function και όλες τις σχετικές μεταβλητές σε "DistanceFilters"
-export default function MarathonType(){
+export default function DistanceFilters() {
 
-   //Marathon's distance[Μήκοι Διαδρομής Μαραθωνίων]
-  const [TypeMarData,setTypeMarData] = useState({Onekm:false,Twokm:false,
-         Tenkm:false,semMar:false,Marathon:false})
+  //Race distances
+  const [raceDistanceData,setRaceDistanceData] = useState({
+    oneKm: false,
+    twoKm: false,
+    tenKm: false,
+    halfMar: false,
+    fullMar: false
+  });
 
-   //States for each marathon[Πλήθος μαραθωνίων στα φίλτρα]
-    const[one,setOne]=useState(0)
-    const[two,setTwo]=useState(0)
-    const[ten,setTen]=useState(0)
-    const[sem,setSem]=useState(0)
-    const[Mar,setMar]=useState(0)
+  //Number of results for each race category
+  const[oneKmResultsCount,setOneKmResultsCount] = useState(0)
+  const[twoKmResultsCount,setTwoKmResultsCount] = useState(0)
+  const[tenKmResultsCount,setTenKmResultsCount] = useState(0)
+  const[halfMarResultsCount,setHalfMarResultsCount] = useState(0)
+  const[fullMarResultsCount,setFullMarResultsCount] = useState(0)
 
-
-    //Αναζήτηση και εμφάνιση πλήθους μαραθωνίων με συγκεκριμένο φίλτρο
-    function Marathons(){
+  //Αναζήτηση και εμφάνιση πλήθους μαραθωνίων με συγκεκριμένο φίλτρο
+  function Marathons() {
     return 
-    }
+  }
 
+  const Handling = (name) => {
+    const checked = !raceDistanceData[name];
+    setRaceDistanceData(raceDistanceData => ({
+      ...raceDistanceData,
+      [name] : checked
+    }));
+  };
 
-    //Marathon's distance Event Handling
-    function Handling(event){
-            const {name,type,value,checked} = event.target
-            setTypeMarData(MarDistanceData => {
-                    return{
-                        ...MarDistanceData ,[name] : type === "checkbox" ? checked : value
-                    }
-            })
-
-    }
-
-
-return (
- <div>
-    <form className='marathonsTypeForm'>
-        <p>Μήκος Διαδρομής</p>
-        <div className='marTypeElements'>
-          <ul>
-            <li>
-              <input
-            type = "checkbox"
-            id="Onekm"
-            checked = {TypeMarData.Onekm}
-            onChange={Handling}
-            name = "Onekm"
-          />
-          <label>1km ({one})</label>
-          </li>
-          <li>
-          <input
-            type = "checkbox"
-            id="Twokm"
-            checked = {TypeMarData.Twokm}
-            onChange={Handling}
-            name = "Twokm"
-          />
-          <label>2km ({two})</label>
-          </li>
-          <li>
-          <input
-            type = "checkbox"
-            id="Tenkm"
-            checked = {TypeMarData.Tenkm}
-            onChange={Handling}
-            name = "Tenkm"
-          />
-          <label>10km ({ten})</label> 
-          </li>
-          <li>
-          <input
-            type = "checkbox"
-            id="semMar"
-            checked = {TypeMarData.SemMar}
-            onChange={Handling}
-            name = "semMar"
-          />
-          <label>Ημιμαραθώνιος ({sem})</label>
-          </li>
-          <li>
-          <input
-            type = "checkbox"
-            id="Marathon"
-            checked = {TypeMarData.Marathon}
-            onChange={Handling}
-            name = "Marathon"
-          />
-          <label>Μαραθώνιος ({Mar})</label>
-          </li>
-          </ul>    
-          </div>
-    </form>
-      
-    
-</div>
-)
-
+  return (
+    <div>
+        <form className='race-distance-form'>
+            <p>Μήκος Διαδρομής</p>
+            <div className='race-distance-elements'>
+              <CustomCheckbox
+                label='1km'
+                count={oneKmResultsCount}
+                initiallyChecked={raceDistanceData.oneKm}
+                onChange={Handling}
+                name='oneKm'
+              />
+              <CustomCheckbox
+                label='2km'
+                count={twoKmResultsCount}
+                initiallyChecked={raceDistanceData.twoKm}
+                onChange={Handling}
+                name='twoKm'
+              />
+              <CustomCheckbox
+                label='10km'
+                count={tenKmResultsCount}
+                initiallyChecked={raceDistanceData.tenKm}
+                onChange={Handling}
+                name='tenKm'
+              />
+              <CustomCheckbox
+                label='Ημιμαραθώνιος'
+                count={halfMarResultsCount}
+                initiallyChecked={raceDistanceData.halfMar}
+                onChange={Handling}
+                name='halfMar'
+              />
+              <CustomCheckbox
+                label='Μαραθώνιος'
+                count={fullMarResultsCount}
+                initiallyChecked={raceDistanceData.fullMar}
+                onChange={Handling}
+                name='fullMar'
+              />
+            </div>
+        </form>
+    </div>
+  );
 }
