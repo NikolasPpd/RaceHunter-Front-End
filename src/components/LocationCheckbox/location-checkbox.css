@@ -1,0 +1,40 @@
+.location-checkbox-container {
+    display: flex;
+    align-items: center;
+    color: var(--text-color-gray);
+    cursor: pointer;
+    font-size: var(--Normal-big-text-size);
+    padding: 5px 0;
+    gap: 10px;
+    user-select: none;
+}
+
+.location-checkbox-container input {
+    /* remove default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    
+    width: 1.5em;
+    height: 1.5em;
+    min-width: 1.5em;
+    min-height: 1.5em;
+    border-radius: 0.25em;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid var(--text-color-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-checkbox-container span {
+    line-height: 130%;
+}
+
+.location-checkbox-container:hover input:not(.checked) {
+    border-color: var(--primary-color);
+}
+
+.location-checkbox-container:hover {
+    color: var(--primary-color);
+}
