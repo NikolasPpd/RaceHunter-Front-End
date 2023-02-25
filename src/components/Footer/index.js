@@ -14,7 +14,7 @@ export default  function Footer() {
                 <li>Όροι χρήσης</li>
                 <li>Πολιτική Απορρήτου</li>
             </ul>
-            <span className='copyright'>© 2022 RaceHunter. All rights reserved.</span>
+            <span className='copyright'>© 2022-{new Date().getFullYear()} RaceHunter. All rights reserved.</span>
         </div>
         <div className="right-side">
             <span className='find-us'>Βρες μας στα Social Media!</span>
