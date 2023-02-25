@@ -21,6 +21,10 @@
 
 .marathon-title{
     font-size: var(--Normal-subHeaders-size);
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 
@@ -30,7 +34,8 @@
     margin-left: 7px;
     gap: 12px;
     padding: 20px 10px;
-    font-size: var(--Normal-smallerHeaders-size)
+    font-size: var(--Normal-smallerHeaders-size);
+    overflow: hidden;
 }
 
 .marathon-dist{
