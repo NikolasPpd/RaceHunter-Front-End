@@ -1,15 +1,15 @@
-.filtersForm > p{
+.filtersForm > p {
     color: black;
     margin-top: 30px;
     font-size: var(--Normal-subHeaders-size);
 }
 
-.filterElements, .filterElements > .list > select{
+.filterElements, .filterElements > .list > select {
     color: var(--text-color-gray);
     font-size: var(--Normal-big-text-size);
 }
 
-.filterElements{
+.filterElements {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -19,14 +19,13 @@
     font-size: var(--Normal-big-text-size);
 }
 
-.nearMe{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.list:hover, .list > select:hover {
+    color: var(--primary-color);
 }
 
-.list{
+.list, .list > select {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
