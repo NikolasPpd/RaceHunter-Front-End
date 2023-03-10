@@ -123,8 +123,8 @@ select{
 
 .title{
    
-    width: 673px;
-    height: 192px;             
+    width: 100%;
+    height: 50vh;             
     font-weight: 800;
     font-size: var(--Normal-bigger-headers-size);        
     line-height: 120%;
@@ -134,36 +134,31 @@ select{
 }
 
 .subtitle{
-    margin-top: 25px;
+   
     left: 10px;
-    width: 600px; 
+    width: 100%; 
   
     font-weight: 400;
     font-size: 21px;  
-    display: flex;
-    align-items: center;
     letter-spacing: 0.015em;
     font-feature-settings: 'tnum' on;
     
     color: #6B7280;
     flex: none;
     order: 1;
-    flex-grow: 0;
+   
 }
 
 .ActionBtns{
     
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 25px;
-
-    width: 598px;
+    width: 272px;
     height: 53px;
 
-
     /* Inside auto layout */
-
     flex: none;
     order: 2;
     flex-grow: 0;
@@ -175,9 +170,6 @@ select{
     justify-content: center;
     align-items: center; */
     padding: 10px 40px;
-    gap: 10px;
-    width: 272px;
-    height: 53px;
     border-radius: 30px;
     background: #2563EB;
     border: 3px solid #2563EB;
@@ -197,8 +189,6 @@ select{
    
     padding: 10px 40px;
     gap: 10px;
-    width: 272px;
-    height: 53px;
     border-radius: 30px;
     background: none;
 
@@ -226,6 +216,30 @@ select{
     color: rgb(30, 23, 23);
     cursor: pointer;
 }
+
+@media (max-width: 734px) {
+    .title{
+        font-size: 60px;
+    }
+    .subtitle{
+        font-size: 15px;
+    }
+    .frame{
+        gap: 20px;
+    }
+
+    .CTAbtn{
+        width: 200px;
+        font-size: 15px;
+    }
+    .LearnMorebtn{
+        width: 200px;
+        font-size: 13px;
+    }
+    
+}
+
+
 
 .features {
     display: flex;
