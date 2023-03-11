@@ -1,0 +1,78 @@
+.background-contact{
+    padding: 2vw 5vw 7vw 5vw; 
+    background: radial-gradient(
+        farthest-corner at 30px 30px, 
+        #f5f5f5 -20%, 
+        #2563EB 120% 
+    );
+}
+
+#title-of-background{
+    font-size: 4vh; 
+    margin: .3vw 0vw 1vw 2vw; 
+    color: #2563EB;
+}
+
+.contact-card{
+    padding: 30px; 
+    display: flex; 
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: #F4F4F4;
+    color: var(--text-color-gray);
+}
+
+.contact-input{
+    padding: 16px 20px;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 2vh;
+    height: 4vh; 
+    width: 35vw;
+    background-color: rgba(37, 99, 235, 0.1);
+    border-radius: 10px;
+    font-family: sans-serif, serif;
+}
+
+.contact-input::placeholder{
+    color: rgba(107, 114, 128, 0.7);
+}
+
+.contact-info-grid{
+    place-self: center;
+    margin-right: 5vw;
+    padding-bottom: 5vh;
+    display: grid;
+    grid-template-columns: auto auto; 
+    grid-template-rows: 42px 40px ;
+    gap: 20px; 
+}
+
+.marker{
+    color: #2563EB;
+    border-radius: 50%;
+    border: 2px solid #2563EB;
+    padding: 4px;
+    font-size: 30px;
+}
+
+#message{
+    resize: none;
+    height: 10vh; 
+}
+
+#send{
+    font-size: large;
+    height: 4vh;
+    width: 35vw;
+    text-align: center;
+    box-shadow: none;
+    border: none; 
+    border-radius: 10px;
+    color: white; 
+    background: #2563EB;
+}
+
+#send:hover{
+    cursor:pointer; 
+}
