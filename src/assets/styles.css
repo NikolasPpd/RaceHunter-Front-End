@@ -16,9 +16,21 @@
 
     --text-color-gray: #6B7280;
     --text-color-black: black;
+
     --Normal-big-text-size: 16px;
     --Normal-text-size: 13px;
-    --Normal-mid-text-size: 14px
+    --Normal-mid-text-size: 14px;
+
+    --Mid-big-headers-size: 23px;
+    --Mid-headers-size: 16px;
+    --Mid-subHeaders-size: 14px;
+    --Mid-smallerHeaders-size: 11px;
+
+    --Small-big-headers-size: 15px;
+    --Small-headers-size: 11px;
+    --Small-subHeaders-size: 10px;
+    --Small-smallerHeaders-size: 9px;
+    
 }
 
 

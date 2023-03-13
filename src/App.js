@@ -11,12 +11,12 @@ export default function App() {
   return (
       <div>
         
-          <Navbar />
+          {/* <Navbar />
             <div>
                 <h1>WELCOME</h1>
             </div>
-            <Footer />
-            {/* <MarathonsContainer/> */}
+            <Footer /> */}
+            <RacesPage />
       </div>
   )
   

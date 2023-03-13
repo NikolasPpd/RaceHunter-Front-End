@@ -2,7 +2,7 @@
     display: flex;
     margin-bottom: 40px;
     background-color: #f4f4f4;
-    width: 800px;
+    width: 100%;
     border-radius: 15px;
     position: relative;
     height: fit-content;
@@ -14,7 +14,7 @@
 
 
 .marathons-img{
-    width: 220px;
+    width: 30%;
     height: 170px;
     border-radius: 15px 0 0 15px;
 }
@@ -61,7 +61,7 @@ h2{
 }
 
 .price{
-    font-size: 25px;
+    font-size: var(--Normal-headers-size);
     color: var(--primary-color);
     font-weight: 600;
 }
@@ -72,4 +72,67 @@ h2{
     right: 0;
     margin-bottom: 15px;
     margin-right: 10px;
+}
+
+@media only screen and (max-width: 601px){
+
+    .marathon-tag{
+        width: 80%;
+    }
+
+    .marathons-img{
+        height: 140px;
+    }
+
+    .marathon-title{
+        font-size: var(--Mid-subHeaders-size)
+    }
+
+    .tag-elements{
+        font-size: var(--Mid-smallerHeaders-size)
+    }
+
+    h2{
+        font-size: var(--Mid-smallerHeaders-size);
+    }
+
+    .icons{
+        font-size: var(--Mid-smallerHeaders-size);
+    }
+
+    .price{
+        font-size: var(--Mid-headers-size);
+    }
+}
+
+@media only screen and (max-width: 360px){
+
+
+    .marathon-tag{
+        width: 80%;
+    }
+
+    .marathons-img{
+        height: 127px;
+    }
+
+    .marathon-title{
+        font-size: var(--Small-subHeaders-size)
+    }
+
+    .tag-elements{
+        font-size: var(--Small-smallerHeaders-size)
+    }
+
+    h2{
+        font-size: var(--Small-smallerHeaders-size);
+    }
+
+    .icons{
+        font-size: var(--Small-smallerHeaders-size);
+    }
+
+    .price{
+        font-size: var(--Small-headers-size);
+    }
 }
